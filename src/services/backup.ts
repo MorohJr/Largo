@@ -10,6 +10,7 @@ import { base64ToBytes, bytesToBase64, decryptText, encryptText, type EncryptedE
  * Restore replaces all data, after Zod validation and migration of older versions.
  */
 
+// נשאר finance-os-backup: גיבויים ישנים חייבים להישאר ניתנים לשחזור.
 export const BACKUP_FORMAT = 'finance-os-backup';
 
 /** Attachment as stored in a backup file: the Blob becomes base64. */
@@ -113,9 +114,9 @@ export async function exportBackup(db: FinanceDB, options: { password?: string; 
   return JSON.stringify({ ...header, encrypted: false, data });
 }
 
-/** File name like finance-os-backup-2026-09-30.json */
+/** File name like largo-backup-2026-09-30.json */
 export function backupFileName(isoDate: string): string {
-  return `finance-os-backup-${isoDate}.json`;
+  return `largo-backup-${isoDate}.json`;
 }
 
 /** Records the backup time so the 7-day reminder resets (SPEC 12). */

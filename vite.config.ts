@@ -18,8 +18,8 @@ export default defineConfig({
       injectRegister: false,
       includeAssets: ['favicon.ico', 'apple-touch-icon-180x180.png', 'icon.svg', 'robots.txt'],
       manifest: {
-        name: 'Finance OS',
-        short_name: 'Finance OS',
+        name: 'Largo',
+        short_name: 'Largo',
         description: 'ניהול כספים אישי, מקומי ואופליין',
         lang: 'he',
         dir: 'rtl',

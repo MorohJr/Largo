@@ -1,6 +1,6 @@
 /** All user-facing text (CLAUDE.md: one translation file). */
 export const he = {
-  appName: 'Finance OS',
+  appName: 'Largo',
 
   nav: {
     home: 'בית',
@@ -1164,7 +1164,7 @@ export const he = {
     restoreFinal: 'שחזר עכשיו',
     restoreDone: 'השחזור הושלם',
     errors: {
-      not_a_backup: 'הקובץ הזה לא גיבוי של Finance OS.',
+      not_a_backup: 'הקובץ הזה לא גיבוי של Largo.',
       newer_version: 'הגיבוי נוצר בגרסה חדשה יותר של האפליקציה. עדכן את האפליקציה ונסה שוב.',
       needs_password: 'הקובץ מוצפן. הזן סיסמה.',
       invalid_data: 'הקובץ פגום או ערוך, ולכן לא שוחזר. הנתונים הקיימים לא השתנו.',

@@ -2,6 +2,7 @@ import Dexie, { type EntityTable } from 'dexie';
 import type * as D from '../domain/schemas';
 import { seedDatabase } from './seed';
 
+// DECISION: שם ה-DB נשאר "finance-os" אחרי שינוי השם ל-Largo, אחרת נתוני המשתמשים ילכו לאיבוד.
 export const DB_NAME = 'finance-os';
 
 /**

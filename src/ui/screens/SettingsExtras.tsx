@@ -94,7 +94,7 @@ export function CsvExport() {
       headers: he.csv.headers,
     });
     try {
-      await saveFile(`finance-os-${from}-${to}.csv`, csv, 'text/csv');
+      await saveFile(`largo-${from}-${to}.csv`, csv, 'text/csv');
       setMessage(he.csv.done(txs.length));
     } catch (e) {
       if (!(e instanceof DOMException && e.name === 'AbortError')) setMessage(he.common.errorGeneric);

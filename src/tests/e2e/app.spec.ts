@@ -59,7 +59,7 @@ test('backup and restore complete a full round trip in the UI', async ({ page })
   const downloadPromise = page.waitForEvent('download');
   await page.getByRole('button', { name: 'ייצוא גיבוי' }).click();
   const download = await downloadPromise;
-  expect(download.suggestedFilename()).toMatch(/^finance-os-backup-\d{4}-\d{2}-\d{2}\.json$/);
+  expect(download.suggestedFilename()).toMatch(/^largo-backup-\d{4}-\d{2}-\d{2}\.json$/);
   const file = await download.path();
   const text = await readFile(file, 'utf8');
   expect(JSON.parse(text).encrypted).toBe(true);

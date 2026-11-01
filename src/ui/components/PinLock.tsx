@@ -5,7 +5,7 @@ import { shouldLock, verifyPin } from '../../services/pin';
 import { he } from '../strings.he';
 
 const KEYS = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '', '0', '⌫'];
-const UNLOCK_EVENT = 'finance-os:unlocked';
+const UNLOCK_EVENT = 'largo:unlocked';
 
 /** Setting a new PIN counts as unlocked for this session; it locks next launch or after 5 minutes away. */
 export function markUnlocked(): void {
